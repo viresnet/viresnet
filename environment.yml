@@ -13,4 +13,4 @@ dependencies:
   - opencv=4.2.0
   - libopencv=4.2.0
   - py-opencv=4.2.0  
-
+  - pillow=7.0.0
