@@ -11,6 +11,4 @@ dependencies:
   - matplotlib-base=3.2.0
   - natsort=7.0.1
   - opencv=4.2.0
-  - libopencv=4.2.0
-  - py-opencv=4.2.0  
   - pillow=7.0.0

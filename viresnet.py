@@ -2,7 +2,7 @@ import os,fnmatch,sys
 import shutil,re
 import numpy as np
 from natsort import natsorted
-# import cv2
+import cv2
 import numpy as np
 import tifffile as TIF
 import skimage
