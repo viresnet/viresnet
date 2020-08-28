@@ -105,7 +105,7 @@ def exportMDPlate(src, dest, pattern = r'((?<=_w[0-9]_thumb).*(?=.tif))|((?<=_w[
         print('No files found. Please check the input path.')
             
 def parseImageFileNames(fullPathList,tok_regex = 
-                        r'\\(?P<timepoint>TimePoint_\d*)\\.*_(?P<well>[A-Z][0-1][1-9])_(?P<site>s[0-9]+)_(?P<channel>w[0-9]).tif'):
+                        r'\\(?P<timepoint>TimePoint_\d*)\\.*_(?P<well>[A-Z][0-1][0-9])_(?P<site>s[0-9]+)_(?P<channel>w[0-9]).tif'):
     #Timepoints Wells Sites Channels
   
 
@@ -180,7 +180,7 @@ def filterFileList(inputList,filters,filterFlag = 'ALL'):
     
     return natsorted(filteredList)
 
-def filterFileListRegex(inputList,inputRegex= r'(?P<timepoint>TimePoint_\d*).*_(?P<well>[A-Z][0-1][1-9])_(?P<site>s[0-9]+)_(?P<channel>w[0-9]).tif' ,
+def filterFileListRegex(inputList,inputRegex= r'(?P<timepoint>TimePoint_\d*).*_(?P<well>[A-Z][0-1][0-9])_(?P<site>s[0-9]+)_(?P<channel>w[0-9]).tif' ,
                         selTP= [],
                         selWell= [],
                         selSite= [],
